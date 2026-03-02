@@ -323,6 +323,8 @@
             </dependency>
           </dependencies>
           <configuration>
+            <!-- The add-opens are required for classes using Netty, often brought in by gRPC or Apache Arrow. -->
+            <argLine>@{jacoco.agent.argLine} --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED</argLine>
             <reportFormat>plain</reportFormat>
             <statelessTestsetInfoReporter implementation="org.apache.maven.plugin.surefire.extensions.junit5.JUnit5StatelessTestsetInfoTreeReporter"/>
             <includes>

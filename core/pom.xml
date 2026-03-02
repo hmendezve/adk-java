@@ -189,6 +189,25 @@
       <artifactId>opentelemetry-sdk-testing</artifactId>
       <scope>test</scope>
     </dependency>
+    <dependency>
+        <groupId>com.google.cloud</groupId>
+        <artifactId>google-cloud-bigquery</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>com.google.cloud</groupId>
+        <artifactId>google-cloud-bigquerystorage</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.arrow</groupId>
+        <artifactId>arrow-vector</artifactId>
+        <version>18.1.0</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.arrow</groupId>
+        <artifactId>arrow-memory-netty</artifactId>
+        <version>18.1.0</version>
+        <scope>runtime</scope>
+    </dependency>
   </dependencies>
   <build>
     <resources>
