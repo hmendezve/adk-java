@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.8.0](https://github.com/google/adk-java/compare/v0.7.0...v0.8.0) (2026-03-03)
+
+
+### Features
+
+* add example on how to expose agent via A2A protocol ([e3ea378](https://github.com/google/adk-java/commit/e3ea378051e5c4e5e5031657467145779e42db55))
+* Adding a SessionKey for typeSafety ([d899f6f](https://github.com/google/adk-java/commit/d899f6f4ad52c84cb4ac8c90d0dc88c22487029c))
+* implement partial event aggregation in RemoteA2AAgent ([e064067](https://github.com/google/adk-java/commit/e0640673d212b9849d312953f192f8da51fae85b))
+
+
+### Bug Fixes
+
+* Allow injecting ObjectMapper in FunctionTool, default to ObjectMapper (re. [#473](https://github.com/google/adk-java/issues/473)) ([71b1070](https://github.com/google/adk-java/commit/71b10701e753bddaa96d5e6579b759d2b9bb3e92))
+* downgrade otel.version to 1.51.0 ([117fedf](https://github.com/google/adk-java/commit/117fedf672bb67c4b078ac75ee81a7710452c5b5))
+* Exit from rearrangeEventsForLatestFunctionResponse if size of events is less than 2 ([5bc3ef8](https://github.com/google/adk-java/commit/5bc3ef89e62eb3f32ba7e45657c9e40c88c3a5e9))
+
 ## [0.7.0](https://github.com/google/adk-java/compare/v0.6.0...v0.7.0) (2026-02-27)
 
 
